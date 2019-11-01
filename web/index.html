@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Questionary</title>
+    <meta charset="utf-8">
+    <link rel='stylesheet' href='style.css' type='text/css' media='all' />
+  </head>
+  <body>
+    <form name="questionary" action="/questionary" method="post">
+      <fieldset>
+        <legend>Personal data</legend>
+        <table>
+          <thead>
+            <th class="label"></th>
+            <th></th>
+          </thead>
+          <tbody>
+            <tr>
+              <td><label class="personal" for="userName">Name</label></td>
+              <td><input type="text" name="userName" id="userName"></td>
+            </tr>
+            <tr>
+              <td><label class="personal" for="userSirname">Sirname</label></td>
+              <td><input type="text" name="userSirname" id="userSirname"></td>
+            </tr>
+            <tr>
+              <td><label class="personal" for="userAge">Age</label></td>
+              <td><input type="text" name="userAge" id="userAge"></td>
+            </tr>
+          </tbody>
+        </table>
+      </fieldset>
+
+      <fieldset>
+        <legend>Select answers</legend>
+        <table>
+          <thead>
+          <th class="label"></th>
+          <th></th>
+          </thead>
+          <tbody>
+            <tr>
+              <td><label for="likeJava">Do you like Java?</label></td>
+              <td>
+                <select name="likeJava" id="likeJava">
+                  <option value="yes">yes</option>
+                  <option value="no">no</option>
+                </select>
+              </td>
+            </tr>
+
+            <tr>
+              <td><label for="skilled">Are you skilled in another languages?</label></td>
+              <td>
+                <select name="skilled" id="skilled">
+                  <option value="yes">yes</option>
+                  <option value="no">no</option>
+                </select>
+              </td>
+            </tr>
+
+            <tr>
+              <td><label for="knowHtml">Do you know HTML?</label></td>
+              <td>
+                <select name="knowHtml" id="knowHtml">
+                  <option value="yes">yes</option>
+                  <option value="no">no</option>
+                </select>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </fieldset>
+
+      <br><input type="submit" class="btn" value="Send">
+    </form>
+  </body>
+</html>

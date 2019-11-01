@@ -1,0 +1,17 @@
+label.personal {
+	font-weight: bold;
+}
+legend {
+    font-weight: bold;
+    color: navy;
+}
+form {
+    max-width: 500px;
+}
+th.label {
+    min-width: 250px;
+}
+.btn {
+    min-width: 100px;
+    float: right;
+}
